@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "Firstname": "Raksha",
+      "Lastname": "Kademani",
+      "Username": "rakshark14",
+      "Useremail": "",
+      "Password": "raksha14",
+      "Address": "sq-19,jnv",
+      "Landmark": "riya",
+      "City": "vijaypur",
+      "State": "karnataka",
+      "Country": "India",
+      "Pincode": 586201,
+      "Mobilenumber": "",
+      "id": 1
+    },
+    {
+      "Firstname": "Raksha",
+      "Lastname": "Kademani",
+      "Username": "Raksha14",
+      "Useremail": "",
+      "Password": "raksha14",
+      "Address": "sq-19,jnv",
+      "Landmark": "almatti",
+      "City": "vijaypur",
+      "State": "karnataka",
+      "Country": "India",
+      "Pincode": 586201,
+      "Mobilenumber": "",
+      "id": 2
+    }
+  ]
+}

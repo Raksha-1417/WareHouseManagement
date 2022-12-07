@@ -1,0 +1,92 @@
+<div class="wrapper">
+
+    <form class="form-right" [formGroup]="signUpForm">
+        <h2 class="text-uppercase">Registration form</h2>
+        <div class="row">
+            <div class="form-group col-sm-6 mb-3">
+                <label>First Name</label>
+                <input type="text" class="form-control input-field"  name="Firstname" formControlName="Firstname">
+            </div>
+            <small *ngIf="signUpForm.controls['Firstname'].dirty && signUpForm.hasError('required','Firstname')" class="text-danger">*Username is a required</small>
+            <div class="form-group col-sm-6 mb-3">
+                <label>Last Name</label>
+                <input type="text" class="form-control input-field"  name="Lastname" formControlName="Lastname">
+            </div>
+            <small *ngIf="signUpForm.controls['Lastname'].dirty && signUpForm.hasError('required','Lastname')" class="text-danger">*Username is a required</small>
+        </div>
+       
+        <div class="form-group mb-3">
+            <label>User Email</label>
+            <input type="text" formControlName="Useremail" class="form-control input-field1" name="Useremail" required>
+        </div>
+        <small *ngIf="signUpForm.controls['Useremail'].dirty && signUpForm.hasError('required','Useremail')" class="text-danger">*Username is a required</small>
+        <div class="row">
+            <div class="form-group col-sm-6 mb-3">
+                <label>Username</label>
+                <input type="text" name="Username" id="Username" formControlName="Username" class="form-control input-field">
+            </div>
+            <small *ngIf="signUpForm.controls['Username'].dirty && signUpForm.hasError('required','Username')" class="text-danger">*Username is a required</small>
+            <div class="form-group col-sm-6 mb-3">
+                <label>Password</label>
+                <input type="password" name="Password" id="Password" formControlName="Password" class="form-control input-field">
+            </div>
+            <small *ngIf="signUpForm.controls['Password'].dirty && signUpForm.hasError('required','Password')" class="text-danger">*Username is a required</small>
+         
+        </div>
+        <div class="row">
+            <div class="form-group col-sm-12 mb-3">
+                <label>Address</label>
+         
+                <input type="text" name="Address" id="Address" formControlName="Address" class="form-control input-field1">
+            </div>
+            <small *ngIf="signUpForm.controls['Address'].dirty && signUpForm.hasError('required','Useremail')" class="text-danger">*Username is a required</small>
+         
+        </div>
+        <div class="row">
+            <div class="form-group col-sm-6 mb-3">
+                <label>Landmark</label>
+                <input type="text" name="Landmark" id="Landmark" formControlName="Landmark" class="form-control input-field">
+            </div>
+            <small *ngIf="signUpForm.controls['Landmark'].dirty && signUpForm.hasError('required','Landmark')" class="text-danger">*Username is a required</small>
+            <div class="form-group col-sm-6 mb-3">
+                <label>City</label>
+                <input type="text" name="City" id="City" formControlName="City"  class="form-control input-field">
+            </div>
+            <small *ngIf="signUpForm.controls['City'].dirty && signUpForm.hasError('required','City')" class="text-danger">*Username is a required</small>
+         
+        </div>
+        <div class="row">
+            <div class="form-group col-sm-6 mb-3">
+                <label>State</label>
+                <input type="text" name="State" id="State"  formControlName="State" class="form-control input-field">
+            </div>
+            <small *ngIf="signUpForm.controls['State'].dirty && signUpForm.hasError('required','State')" class="text-danger">*Username is a required</small>
+            <div class="form-group col-sm-6 mb-3">
+                <label>Country</label>
+                <input type="text" name="Country" id="Country" formControlName="Country" class="form-control input-field">
+            </div>
+            <small *ngIf="signUpForm.controls['Country'].dirty && signUpForm.hasError('required','Country')" class="text-danger">*Username is a required</small>
+         
+        </div>
+        <div class="row">
+            <div class="form-group col-sm-6 mb-3">
+                <label>Pincode</label>
+                <input type="text" name="Pincode" id="Pincode" formControlName="Pincode" class="form-control input-field">
+            </div>
+            <small *ngIf="signUpForm.controls['Pincode'].dirty && signUpForm.hasError('required','Pincode')" class="text-danger">*Username is a required</small>
+            <div class="form-group col-sm-6 mb-3">
+                <label>Mobile Number</label>
+                <input type="text" name="MobileNumber" id="MobileNumber" formControlName="MobileNumber" class="form-control input-field">
+            </div>
+            <small *ngIf="signUpForm.controls['MobileNumber'].dirty && signUpForm.hasError('required','MobileNumber')" class="text-danger">*Username is a required</small>
+         
+        </div>
+        <div class="mb-3">
+            <label class="option">I agree to the <a href="#">Terms and Conditions</a>
+                <input type="checkbox" checked>
+                <span class="checkmark"></span>
+            </label>
+        </div>
+        <button  type="submit" (click)="onRegister()" class="btn btn-warning" style="width:100px;margin-left: 10px;">Create</button>
+    </form>
+</div>
